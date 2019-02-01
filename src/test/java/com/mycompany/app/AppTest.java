@@ -15,12 +15,12 @@ public class AppTest
 {
 	App a = new App();
 
-	public static boolean compare(int[] array, int[] array2){
-		if(array.length != array2.length){
+	public static boolean compare(ArrayList<Integer> array, ArrayList<Integer> array2){
+		if(array.size() != array2.size()){
 			return false;
 		}
-		for(int i = 0 ; i < array.length ; i++){
-			if(array[i] != array2[i]){
+		for(int i = 0 ; i < array.size() ; i++){
+			if(array.get(i) != array2.get(i)){
 				return false;
 			}
 		}

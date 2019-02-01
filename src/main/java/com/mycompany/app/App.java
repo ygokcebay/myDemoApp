@@ -62,8 +62,13 @@ public class App
 	  String input4 = req.queryParams("input4").replaceAll("\\s","");
           int input4AsInt = Integer.parseInt(input4);
 
-          int[] result = App.calc(inputList, inputList2, input3AsInt, input4AsInt);
+          int[] resultInt = App.calc(inputList, inputList2, input3AsInt, input4AsInt);
 
+	  String result = "";
+
+	  for(int i = 0 ; i < resultInt.length ; i++){
+	  	result += resultInt[i] + " ";
+	  }
          Map map = new HashMap();
           map.put("result", result);
           return new ModelAndView(map, "compute.mustache");
