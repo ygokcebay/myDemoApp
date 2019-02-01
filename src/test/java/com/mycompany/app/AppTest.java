@@ -3,6 +3,9 @@ package com.mycompany.app;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Unit test for simple App.
@@ -24,8 +27,8 @@ public class AppTest
 		return true;
 	}
 	public void test1(){
-		int[] array1 = {1,2,3,4};
-		int[] array2 = {3,4,5,6};
+		ArrayList<Integer> array1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+		ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(3, 4, 5, 6));
 		int x = 5;
 		int y = 25;
 
@@ -34,8 +37,8 @@ public class AppTest
 	}
 
 	public void test2(){
-		int[] array1 = {5,25,86,98};
-		int[] array2 = {33,46,16,62};
+		ArrayList<Integer> array1 = new ArrayList<>(Arrays.asList(5,25,86,98));
+		ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(33,46,16,62));
 		int x = 15;
 		int y = 35;
 
@@ -44,8 +47,8 @@ public class AppTest
 	}
 
 	public void test3(){
-		int[] array1 = {9,7,77,43};
-		int[] array2 = {17,29,16,82};
+		ArrayList<Integer> array1 = new ArrayList<>(Arrays.asList(9,7,77,43));
+		ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(17,29,16,82));
 		int x = 14;
 		int y = 99;
 
@@ -54,8 +57,8 @@ public class AppTest
 	}
 
 	public void test4(){
-		int[] array1 = {46,79,147,173};
-		int[] array2 = {87,99,106,89};
+		ArrayList<Integer> array1 = new ArrayList<>(Arrays.asList(46,79,147,173));
+		ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(87,99,106,89));
 		int x = 94;
 		int y = 105;
 
@@ -64,8 +67,8 @@ public class AppTest
 	}
 
 	public void test5(){
-		int[] array1 = {146,179,1147,1173};
-		int[] array2 = {487,399,2106,189};
+		ArrayList<Integer> array1 = new ArrayList<>(Arrays.asList(146,179,1147,1173));
+		ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(487,399,2106,189));
 		int x = 694;
 		int y = 7105;
 
